@@ -1,0 +1,101 @@
+/* src/App.css (Versão com tamanho reduzido ~80%) */
+
+/* Reset básico permanece o mesmo */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box; 
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px; /* AJUSTE: Reduzido de 50px */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 480px; /* AJUSTE: Largura máxima um pouco menor */
+  padding: 1.5em;     /* AJUSTE: Espaçamento interno geral reduzido */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 1em;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.2em; /* AJUSTE: Margem inferior reduzida */
+  font-size: 1.5em;     /* AJUSTE: Tamanho da fonte do título reduzido */
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.2em; /* AJUSTE: Espaçamento entre os campos reduzido */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4em; /* AJUSTE: Espaçamento menor entre label e input */
+  font-weight: bold;
+  font-size: 0.9em;     /* AJUSTE: Fonte dos labels um pouco menor */
+  color: #555;
+}
+
+/* Campos de input e select */
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 0.6em;   /* AJUSTE: Espaçamento interno reduzido (deixa o campo mais baixo) */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em; /* AJUSTE: Fonte dos campos um pouco menor */
+}
+
+button {
+  width: 100%;
+  padding: 0.7em;  /* AJUSTE: Espaçamento interno do botão reduzido */
+  font-size: 1em;    /* AJUSTE: Fonte do botão reduzida */
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  margin-top: 0.5em; /* AJUSTE: Adiciona um pequeno espaço acima do botão */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.response-message {
+  margin-top: 1.2em; /* AJUSTE: Margem da caixa de resposta reduzida */
+  padding: 0.8em;    /* AJUSTE: Espaçamento interno da caixa de resposta reduzido */
+  border-radius: 5px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

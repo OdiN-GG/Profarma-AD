@@ -1,0 +1,1 @@
+.\scripts\Reset-ADPassword.ps1 -Username "joao.silva" -NewPassword "SenhaDeTeste123" -SearchOU "OU=rh,OU=Filial Goias,OU=PROFARMA,DC=dist,DC=grp,DC=local"
